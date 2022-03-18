@@ -3,8 +3,6 @@
 function palindrom(text) {
 	let result = [];
 	const filteredText = text.replace(/[^a-zа-я\s]/gi, "");
-	console.log(filteredText);
-
 	filteredText.split(" ").forEach((word) => {
 		if (word && word === word.split("").reverse().join("")) result.push(word);
 	});
